@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Trip Together"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="로그인"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+
+        >
+
+    </TextView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/trip"
+        android:layout_marginBottom="20dp"
+        >
+
+    </ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/login_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:hint="ID"
+            android:layout_marginBottom="20dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <EditText
+            android:id="@+id/login_Password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:hint="Password"
+            android:password="true"
+            android:layout_marginBottom="20dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:gravity="center"
+        android:background="@drawable/btn_blue"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:clickable="true"
+       >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/login"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stateListAnimator="@null"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Login"
+            >
+        </TextView>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="OR"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        ></TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아직 회원이 아니시라구요?"
+            android:layout_weight="5"
+            android:textSize="15dp"
+            android:gravity="right"
+            android:textColor="#000000"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/login_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    회원가입"
+            android:layout_weight="5"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:clickable="true"
+            android:textColor="@color/colorBlue"
+            ></TextView>
+    </LinearLayout>
+
+</LinearLayout>
