@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_profile"
+        android:title="프로파일"
+        android:icon="@drawable/ic_person"/>
+    <item
+        android:id="@+id/bottom_chat"
+        android:title="채팅"
+        android:icon="@drawable/ic_glyph_solid_comment"/>
+    <item
+        android:id="@+id/bottom_shop"
+        android:title="샵"
+        android:icon="@drawable/ic_shop"/>
+    <item
+        android:id="@+id/bottom_more"
+        android:title="모얼"
+        android:icon="@drawable/ic_more"/>
+</menu>
